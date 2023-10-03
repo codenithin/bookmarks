@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-r042nk#edz=t7h3f3p_ct9yyzic@5v!_ed*^vv&e)rtw0$!#sh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['mysite.com', 'localhost','127.0.0.1']
+ALLOWED_HOSTS = ['https://web-production-15aaf.up.railway.app/','mysite.com', 'localhost','127.0.0.1']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 LOGIN_URL = 'login'
@@ -212,3 +212,5 @@ STORAGES = {
         "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
     },
 }
+
+CSRF_TRUSTED_ORIGINS = ['https://web-production-15aaf.up.railway.app/']
