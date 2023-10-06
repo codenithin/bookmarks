@@ -1,2 +1,2 @@
-web: python manage.py migrate && python manage.py collectstatic && gunicorn bookmarks.wsgi
+web: python manage.py migrate && python manage.py collectstatic --noinput && gunicorn bookmarks.wsgi
 
